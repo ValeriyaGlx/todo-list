@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo__content">
+       <h1 class="todo__header">ALL TASKS</h1>
+       <div class="todo__new">
+        <input class = "todo__input" type="text" placeholder="Add a new task. For examle 'buy groceries'.">
+        <button class="todo__buttom" type="submit">Add <span>task</span></button>
+       </div>
+       <p class="todo__empty-tasks hidden">add any text</p>
+       <p class="todo__no-tasks hidden">no new tasks. add anymore.</p>
+    </div>
+    
+    
+    
+
+    <div class="todo__task-field">
+
+        <template id="task-template">
+         <div class="todo__task">
+         <label class="todo__task-checkbox">
+            <input type="checkbox">
+            <div></div>
+         </label>
+         <div class="todo__task-text"></div>
+         <button  class="todo__task-delete"></button>
+         </div>
+         </template>
+    
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
